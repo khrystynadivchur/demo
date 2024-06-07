@@ -11,7 +11,7 @@ class HelloWorld(AbstractLambda):
         
     def handle_request(self, event, context):
         """
-        Explain incoming event here
+        Hello from Lambda
         """
         # todo implement business logic
         return 200
