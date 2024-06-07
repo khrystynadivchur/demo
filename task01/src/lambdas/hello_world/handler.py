@@ -11,10 +11,15 @@ class HelloWorld(AbstractLambda):
         
     def handle_request(self, event, context):
         """
-        Hello from Lambda
+        Explain incoming event here
         """
         # todo implement business logic
-        return 200
+        #return 200
+        response = {
+        'statusCode': 200,
+        'message': 'Hello from Lambda'
+        }
+        return response
     
 
 HANDLER = HelloWorld()
